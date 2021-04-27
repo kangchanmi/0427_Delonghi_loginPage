@@ -1,0 +1,465 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/*Reset 시작*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Reset 끝*/
+
+/*GuideLine 시작*/
+/*div#wrap {border: 1px solid #000;}*/
+/*#loginContents {border: 1px solid #000;}*/
+/*#loginSubBtn {border: 1px solid #000;}*/
+/*footer#footer { border: 1px solid #000;}*/
+
+/*GuideLine 끝*/
+
+/*header#header 시작*/
+header#header {
+    width: 100%;
+    height: 110px;
+    padding-top: 30px;
+    background-color: #0c2645;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+div#headerArea {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+div#headerArea>a {
+    line-height: 72px;
+    display: inline-block;
+}
+/*nav#gnb 시작*/
+nav#gnb {
+    position: relative;
+}
+
+nav#gnb > ul#mainMenu {
+    width: 641px;
+    margin-left: 80px;
+    display: flex;
+}
+
+nav#gnb > ul#mainMenu > li > a {
+    margin: 30px;
+    margin-right: 27px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 510;
+    color: #fff;
+
+    letter-spacing: 0.1px;
+}
+
+nav#gnb > ul#mainMenu > li > a:hover {
+    color: #3289e8;
+    padding-bottom: 37px;
+    border-bottom: 6px solid #3289e8;
+}
+
+/*풀다운 메뉴*/
+div#bgArea {
+    border: 1px solid #ddd;
+
+    display: none;
+
+    position: relative;
+    z-index: 2;
+}
+
+#bgArea #subMenuBG {
+    width: 100%;
+    height: 165px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: fixed;
+    top: 109px;
+}
+
+#gnb ul.subMenu {
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+
+    display: none;
+}
+
+#gnb ul.subMenu {
+    display: none;
+}
+
+#gnb ul.subMenu > li {
+    color: #222;
+
+    float: left;
+}
+
+#gnb ul.subMenu>li>a, ul.sideMenu a {
+    width: 100%;
+    padding: 5px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+
+    display: inline-block;
+}
+
+#gnb ul.subMenu > li > a:hover,
+ul.sideMenu a:hover {
+    color: #3289e8;
+}
+
+ul.sideMenu a {
+    color: #444;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*풀다운 메뉴*/
+/*nav#gnb 끝*/
+
+
+/*div#subMenu 시작*/
+div#subMenu {
+    display: flex;
+}
+
+div#subMenu img {
+    padding-top: 15px;
+}
+
+div#subMenu .subMenuIcon {
+    width: 66px;
+    padding-top: 3px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    display: inline-block;
+}
+div#subMenu .subMenuIcon:nth-child(4) {
+    width: 75px;
+}
+div#subMenu .subMenuIcon span {
+    padding-top: 8px;
+
+    display: inline-block;
+    display: none;
+}
+
+div#subMenu .subMenuIcon span.Join {
+    padding-top: 10px;
+    display: inline-block;
+    display: none;
+}
+
+div#subMenu .subMenuIcon span.order {
+    padding-top: 7px;
+    display: inline-block;
+    display: none;
+}
+
+/*div#subMenu 끝
+
+/*header#header 끝*/
+
+
+
+
+
+/*div#wrap 시작*/
+div#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*main#main 시작*/
+main#main {
+    margin-top: 120px;
+}
+
+#main #loginLogo {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#main #loginLogo a {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#main #loginLogo>span {
+    font-size: 13px;
+    margin-left: 24px;
+    color: #999;
+    display: inline-block;
+
+    position: relative;
+    bottom: 2px;
+}
+#main #loginLogo .JoinTxt {
+    font-size: 14px;
+    color: #111;
+    display: inline-block;
+    letter-spacing: -2px;
+    position: relative;
+    bottom: 2px;
+}
+
+/*div#loginContents 시작*/
+div#loginContents {
+    width: 1000px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+div#loginContents h1 {
+    padding: 28px;
+    font-size: 50px;
+    letter-spacing: -1px;
+}
+
+    /*아이디 찾기 / 비밀번호 찾기*/
+#main #idFind {
+    width: 730px;
+    margin: 0 auto;
+    text-align: center;
+}
+#main #idFind #findBtn {
+    display: flex;
+}
+#main #idFind #findBtn button {
+    width: 360px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 85px;
+    background-color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+#main #idFind #findBtn button img {
+    margin-right: 15px;
+    position: relative;
+    top: 7px;
+}
+#main #idFind #findBtn button img.otherImg {
+    display: none;
+}
+#main #idFind #findBtn button#idBtn {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #3289e8;
+    border-right: none;
+    color: #888;
+}
+#main #idFind #findBtn button#passBtn {
+    color: #3289e8;
+    border-top: 1px solid #3289e8;
+    border-right: 1px solid #3289e8;
+    border-left: 1px solid #3289e8;
+    border-bottom: 1px solid #fff;
+}
+#PassInfo>p {
+    margin-bottom: 45px;
+    font-size: 22px;
+    color: #555;
+}
+#PassInfo button {
+    width: 220px;
+    height: 50px;
+    margin-bottom: 90px;
+    color: #fff;
+    border: 1px solid #3289e8;
+    font-size: 18px;
+    background-color: #3289e8;
+}
+#main #PassInfo button:hover {
+    opacity: 0.8;
+}
+#main #PassInfo {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+    display: inline-block;
+}
+#idInput>p {
+    font-size: 14px;
+    color: #555;
+}
+#PassInfo input {
+    width: 435px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 45px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#PassInfo input::placeholder {
+    color: #bbb;
+}
+#PassInfo input:focus-within {
+    border: 1px solid #3289e8;
+}
+#PassInfo #notice p {
+    width: 435px;
+    margin: 0;
+    margin-top: 7px;
+    text-align: left;
+    color: #777;
+    font-size: 14px;
+}
+#PassInfo #notice p span {
+    width: 17px;
+    height: 17px;
+    margin-right: 7px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 500px;
+    background-color: #beb5ab;
+    color: #fff;
+    display: inline-block;
+}
+    /*아이디 찾기 / 비밀번호 찾기*/
+ /*main#main 끝*/
+/*div#wrap 끝*/
+
+
+
+
+/* aside 시작*/
+
+/* aside 끝*/
+
+
+
+
+
+/*footer#footer 시작*/
+footer#footer {
+    width: 100%;
+    background-color: #0c2645;
+    text-align: center;
+}
+
+hr#footerHr {
+    width: 100%;
+    border: none;
+    border: 0.01em solid #253c58;
+
+    position: relative;
+     top: 113px;
+    z-index: 1;
+}
+
+/*div#footer 시작*/
+div#footerArea {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 120px;
+}
+
+div#fnb {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    text-align: center;
+    display: inline-block;
+}
+
+div#fnb>a {
+    margin: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+
+    display: inline-block;
+}
+
+div#fnb img {
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+
+div#fnb p {
+    display: inline-block;
+}
+
+/*div#footer 끝*/
+
+/*div#copy 시작*/
+#copy img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#copy p {
+    margin-right: 15px;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    font-size: 14px;
+    color: #677079;
+
+    text-align: center;
+    display: inline-block;
+}
+
+#company {
+    width: 1000px;
+    margin-left: 100px;
+    display: flex;
+}
+
+#Tell {
+    display: flex;
+    margin-left: 120px;
+}
+
+/*div#copy 끝*/
+
+/*footer#footer 끝*/
+
+/* 회원가입 hover 버튼*/
+#loginSubBtn img.hoverImg {
+    width: 62px;
+    height: 58px;
+    padding: 14px;
+
+    background-color: #3289e8;
+    border-radius: 30px;
+    display: none;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+}
+
+
+
+
+
+header, main, aside, nav, footer {
+    display: block;
+}

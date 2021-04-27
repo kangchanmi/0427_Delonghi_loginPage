@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    color: #222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a                     {text-decoration: none;}
+a:link               {color: #333;}
+a:visited           {color: #333;}
+a:active            {color: #333;}
+a:hover            {color: #333;}
+
+img                 {vertical-align: middle;}
+/* Reset */
+
+/* 가이드 라인 */
+div#wrap             {border: 1px solid #000;}
+div#findAuth        {border: 1px solid #000;}
+/* 가이드 라인 */
+
+div#wrap {
+    width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+}
+div#findAuth {
+    width: 840px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+}
+
+
+
+a {
+    color: #888 !important;    /*#3289e8 !important*/
+    height: 66px;
+    line-height: 46px;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #aaa;
+
+    flex: 1;
+    position: relative;
+}
+
+#findAuth #findID::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+/*    border: 1px solid #000;*/
+    background-image: url(../images/icon04_31x27.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#findAuth #findPW::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+/*    border: 1px solid #000;*/
+    background-image: url(../images/icon05_28x26.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a.selected {
+    color: #3289e8 !important;
+    border: 1px solid #3289e8;
+    border-bottom: none;
+}
+a#findPW.selected {
+    border-left: 1px solid #3289e8;
+    border-bottom: none !important;
+
+
+}
+a#findID:not(.selected) {
+    border-right: none;
+}
+a#findID.selected::before {
+    background-image: url(../images/icon04_on_31x27.png) !important;
+
+}
+a:not(.selected) {
+    border-bottom: 1px solid #3289e8;
+}
+
+a#findPW.selected::before {
+    background-image: url(../images/icon05_on_28x26.png) !important;
+
+}
+
+
+a#findID {
+    border-right: 1px solid #3289e8;
+}
+
+
